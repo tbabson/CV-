@@ -2,41 +2,55 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>contact</title>
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <h2>Contact</h2>
-    <p>For contact details </p>
-    <table cellspacing="10px">
-      <tr>
-        <td><strong>Phone:</strong><br><a href="07035689102">07035689102</a></td>
-        <td><strong>Email:</strong> <br><a href="tbabson20@gmail.com">tbabson20@gmail.com</a> </td>
-        <td><strong>Website:</strong><br><a href="wwww.facebook.com/tbabson20">www.tbabson20.com</a></td>
-      </tr>
-    </table>
-<form  action="mailto:tbabson20@gmail.com" method="post" ectype="text/plain">
-<label for="Name">Name:</label>
-<input type="text" name="Name" value=""> <br>
-<label for="email">Email:</label>
-<input type="email" name="Email" value=""> <br>
-<label for="password">Password:</label>
-<input type="password" name="password" value=""> <br>
-<textarea name="your message" rows="10" cols="40"></textarea> <br>
-<input type="submit">
-
-
-
-
-
-</form>
-
-
-
-
-
-
-    <a href="index.html">Homepage</a> <br>
-    <a href="myhobbies.html">Hobbies</a> <br>
-      <a href="workexperience.html">Work Experience</a>
+    <header>
+      <h1>Contact Me</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="workexperience.html">Work Experience</a></li>
+          <li><a href="myhobbies.html">Hobbies & Skills</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <main>
+        <h2 class="section-heading">Contact Details</h2>
+        <p class="section-intro">You can reach me through the following channels:</p>
+        <table class="contact-details-table">
+          <tr>
+            <td><strong>Phone:</strong><br><a href="tel:07035689102">07035689102</a></td>
+            <td><strong>Email:</strong> <br><a href="mailto:tbabson20@gmail.com">tbabson20@gmail.com</a></td>
+            <td><strong>Website:</strong><br><a href="http://www.facebook.com/tbabson20" target="_blank">www.tbabson20.com</a></td>
+          </tr>
+        </table>
+        <hr>
+        <h2 class="section-heading">Send Me a Message</h2>
+        <form class="contact-form" action="mailto:tbabson20@gmail.com" method="post" enctype="text/plain">
+          <div class="form-group">
+            <label for="Name">Name:</label>
+            <input type="text" id="Name" name="Name" value="">
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="Email" value="">
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="your_message" rows="10" cols="40"></textarea>
+          </div>
+          <div class="form-group">
+            <input type="submit" value="Send">
+          </div>
+        </form>
+      </main>
+    </div>
+    <footer>
+      <p>&copy; 2023 Babatunde Taiwo Adekunle</p>
+    </footer>
   </body>
 </html>

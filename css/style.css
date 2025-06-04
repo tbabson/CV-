@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+main {
+  padding-bottom: 20px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  background: #333;
+  color: #fff;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #ccc;
+  margin: 20px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #e9e9e9;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center; /* Or left/right as preferred */
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a {
+    color: #fff; /* Assuming nav is in a dark header */
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Styles for index.html specific header */
+header#page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* Changed from center for better spacing */
+    flex-wrap: wrap;
+    text-align: left; /* Override general header text-align: center */
+    padding: 20px; /* Added more padding */
+}
+
+/* Ensure nav within flex header is handled well - it might need to be full width or styled differently */
+header#page-header nav {
+    width: 100%; /* Make nav take full width to appear on its own line if wrapped */
+    margin-top: 15px; /* Add some space if it wraps under intro text/pic */
+}
+
+
+img.profile-pic {
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-bottom: 10px;
+    margin-right: 20px; /* For spacing if next to text */
+    width: 150px; /* Fixed width */
+    height: 150px; /* Fixed height */
+}
+
+.intro-text {
+    flex: 1; /* Allow text to take available space */
+    min-width: 250px; /* Prevent text from getting too squished */
+}
+
+.intro-text h1 {
+    margin-bottom: 10px; /* Space below name */
+    color: #fff; /* Ensure it's visible on dark header */
+}
+
+/* Books and Teaching Section */
+.books-section {
+    padding: 15px;
+    background-color: #fff; /* Give it a slightly different background */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Add a subtle shadow */
+}
+
+.books-section h3 {
+    margin-bottom: 10px;
+    color: #555;
+    border-bottom: 1px solid #eee; /* Add a separator line */
+    padding-bottom: 5px;
+}
+
+.books-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.books-section ul li {
+    margin-bottom: 5px;
+    line-height: 1.8; /* Improve line spacing for readability */
+}
+
+/* Contact Page Specific Styles */
+.contact-details-table {
+    margin-bottom: 30px; /* More space after contact details table */
+}
+
+.contact-details-table td {
+    padding: 10px; /* Slightly more padding in contact details cells */
+}
+
+.contact-form {
+    background: #fff;
+    padding: 25px; /* Increased padding */
+    border-radius: 8px; /* Slightly more rounded corners */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Refined shadow */
+}
+
+.section-heading {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee; /* Separator for headings */
+    color: #333;
+}
+
+.section-intro {
+    margin-bottom: 15px;
+    color: #555;
+    font-size: 1.1em;
+}
+
+.form-group {
+    margin-bottom: 20px; /* Increased space between form groups */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px; /* Increased space below label */
+    font-weight: bold;
+    color: #333; /* Darker label color */
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"], /* Though password not in this form, good to have */
+.form-group textarea {
+    width: 100%;
+    padding: 12px; /* Increased padding in inputs */
+    border: 1px solid #ccc; /* Slightly darker border */
+    border-radius: 4px;
+    font-size: 1em; /* Consistent font size */
+}
+
+.form-group textarea {
+    min-height: 120px; /* Minimum height for textarea */
+    resize: vertical; /* Allow vertical resize */
+}
+
+.form-group input[type="submit"] {
+    background: #5cb85c;
+    color: white;
+    padding: 12px 20px; /* Adjusted padding */
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.form-group input[type="submit"]:hover {
+    background: #4cae4c;
+}
+
+/* Hobbies & Skills Page Specific Styles */
+.hobbies-section, .skills-section {
+    padding: 15px;
+    background-color: #fff; /* White background for these sections */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Softer shadow */
+    margin-bottom: 20px; /* Space between sections */
+}
+
+/* Hobbies List Styling */
+.hobbies-section ol {
+    list-style-type: decimal; /* Changed from 'i' to decimal */
+    margin-left: 20px;
+    padding-left: 10px; /* Additional padding for list items */
+}
+
+.hobbies-section ol li {
+    margin-bottom: 8px;
+    line-height: 1.7; /* Slightly more line height */
+    color: #444; /* Darker text for hobbies */
+}
+
+.hobbies-section ol li a {
+    color: #007bff; /* Standard link blue */
+    text-decoration: none;
+}
+
+.hobbies-section ol li a:hover {
+    text-decoration: underline;
+}
+
+/* Skills Table Styling */
+.skills-section table {
+    margin-top: 10px; /* Space above the table */
+}
+
+.skills-section th, .skills-section td {
+    padding: 12px; /* Increased padding for skill cells */
+    border-bottom: 1px solid #f0f0f0; /* Lighter border for rows */
+}
+
+.skills-section th {
+    background-color: #f7f7f7; /* Lighter background for skill table header */
+    color: #333;
+    text-align: left;
+}
+
+/* Center the stars in the second column of the skills table */
+.skills-section td:nth-child(2) {
+    text-align: center;
+    font-size: 1.2em; /* Make stars slightly larger if they are text */
+}
+
+/* Work Experience Page Specific Styles */
+.work-experience-section {
+    padding: 15px;
+    background-color: #fff; /* White background for this section */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Softer shadow */
+    margin-bottom: 20px;
+}
+
+.work-experience-table {
+    width: 100%; /* Already default by global, but good to be explicit */
+    /* border-collapse: collapse; Already global */
+    margin-top: 10px; /* Space if there was a heading directly in this section */
+}
+
+.work-experience-table th, .work-experience-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee; /* Light line for rows */
+    text-align: left; /* Ensure text alignment */
+}
+
+/* Header row for work experience table */
+.work-experience-table th {
+    background-color: #333; /* Dark background for header */
+    color: white;
+    font-weight: bold; /* Ensure header text is bold */
+}
+
+/* Row striping for readability */
+.work-experience-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Hover effect for rows */
+.work-experience-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Styling for the first column (dates) */
+.work-experience-table td:first-child {
+    font-weight: bold;
+    color: #555;
+    width: 180px; /* Adjusted width for dates */
+    white-space: nowrap; /* Prevent dates from wrapping */
+}
